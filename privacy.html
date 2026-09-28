@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Wardog Assistant</title>
+<link rel="icon" href="avatar.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&family=Saira+Stencil+One&display=swap">
+<style>
+  :root { color-scheme: dark; --field: #131812; --panel: #1B2219; --line: #2E3A2A; --ink: #E8E6D6; --muted: #9AA38E; --brass: #D4A72C;
+          --display: "Saira Stencil One", "Arial Narrow", Impact, sans-serif; --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--field); color: var(--ink); font: 400 17px/1.65 var(--body); padding-inline: 20px; }
+  a { color: var(--brass); }
+  a:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .top { border-bottom: 1px solid var(--line); margin-inline: -20px; padding: 12px 20px; }
+  .top a { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: 400 1.2rem/1 var(--display); }
+  .top img { width: 32px; height: 32px; border-radius: 7px; }
+  main { max-width: 42rem; margin-inline: auto; padding-block: 48px 64px; }
+  h1 { font: 400 clamp(2rem, 5vw, 2.8rem)/1.1 var(--display); margin: 0 0 8px; text-wrap: balance; }
+  h2 { font: 600 1.2rem/1.3 var(--body); margin: 36px 0 10px; }
+  p, ul { margin: 0 0 14px; color: #D4D2C3; }
+  ul { padding-left: 1.2em; } li { margin-bottom: 6px; }
+  strong { color: var(--ink); }
+  code { font: 500 .9em var(--mono); color: var(--brass); }
+  footer { border-top: 1px solid var(--line); max-width: 42rem; margin-inline: auto; padding-block: 24px 40px; color: var(--muted); font-size: .88rem; display: flex; gap: 20px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<header class="top"><a href="index.html"><img src="avatar.png" alt="" width="32" height="32">Wardog Assistant</a></header>
+<main>
+<h1>Privacy Policy</h1>
+<p><strong>Last updated:</strong> 28 September 2026</p>
+<p>Wardog Assistant ("the bot") is a Discord bot that tracks WARDOGS player progress for Discord servers. This policy explains what the bot stores, why, and how to have it removed.</p>
+<p>Wardog Assistant is an independent project. It is not affiliated with Discord, the makers of WARDOGS, or the WARDOGS Database (wardogs.tools).</p>
+<h2>What the bot stores</h2>
+<p><strong>About players who link a WARDOGS profile</strong> (with <code>/link-wardogs</code>):</p>
+<ul><li>Your <strong>Discord user ID</strong>.</li><li>The <strong>wardogs.tools profile link</strong> you gave it.</li><li>Stats read from that <strong>public</strong> wardogs.tools profile: in-game name, WARDOG level, role levels and XP, total XP, cash, gold, worth, global rank, recent gains, and whether wardogs.tools is still tracking your account.</li><li>For <strong>each Discord server where you use the bot</strong>: your rank there, when you were promoted (up to your last 20 promotions), and whether you've left that server.</li><li>When your stats were last updated.</li></ul>
+<p><strong>About Discord servers that use the bot:</strong></p>
+<ul><li>The server's ID and the settings its admins choose: announcement and alert channel IDs, rank thresholds, milestone levels, weekly recap schedule, and whether rank roles are on.</li></ul>
+<h2>What the bot does not store</h2>
+<ul><li><strong>Message content.</strong> The bot does not read messages in your server.</li><li>Your Discord username, display name or avatar. These are fetched from Discord when a profile card is shown, not saved.</li><li>Passwords, email addresses, payment details, or your Steam or WARDOGS login. The bot only reads public wardogs.tools profile pages.</li></ul>
+<h2>How the data is used</h2>
+<ul><li>To show profiles, ranks, leaderboards, clan stats, milestones and weekly recaps <strong>in the servers where you use the bot</strong>. Linking your profile in one server does not put you on another server's leaderboards; you appear in a server only after using the bot there.</li><li>To give you rank roles in servers that have them turned on.</li><li>To refresh your stats automatically, by re-reading your public wardogs.tools profile about every 30 minutes.</li></ul>
+<p>The data is not sold, not used for advertising, and not shared with anyone outside the servers described above.</p>
+<h2>Who can see it</h2>
+<ul><li><strong>Members of a server where you use the bot</strong> can see your stats and rank through its commands and posts.</li><li><strong>Server admins</strong> can download a backup of their own server's member data. They cannot see any other server's data.</li><li><strong>The bot's developer</strong> can access all stored data in order to run the bot, fix problems, and keep backups.</li></ul>
+<h2>Where it's kept, and backups</h2>
+<p>The data is stored on a private server hosted by DigitalOcean. A backup copy is made once a day and kept in a private, admin-only Discord channel belonging to the bot's developer, so the data can be recovered if the server fails. <strong>Backups are deleted automatically after 30 days.</strong></p>
+<h2>How long it's kept, and removing it</h2>
+<p>Your data is kept while your profile is linked. To remove it:</p>
+<ul><li><strong>Run <code>/unlink</code></strong> in any server that uses the bot. After you confirm, your link, stats, ranks and promotions are deleted straight away, in every server, and your rank roles are removed.</li><li>Or <strong>ask an admin</strong> of a server to run <code>/admin unlink</code> on you. That removes you from that server; if you aren't in any other server that uses the bot, everything about you is deleted.</li><li>Or <strong>ask the developer</strong> through the support server below.</li></ul>
+<p>Deleted data can remain in daily backups until those are deleted automatically, at most 30 days later.</p>
+<p>If a server removes the bot, its settings are kept in case it's added back. A server admin can ask the developer to delete them.</p>
+<h2>Children</h2>
+<p>Discord requires users to be at least 13 (or older where local law says so). The bot is intended for Discord users who meet Discord's age requirements.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this same link with a new "Last updated" date.</p>
+<h2>Contact</h2>
+<p>Questions or removal requests: the support server (link coming soon)</p>
+</main>
+<footer><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></footer>
+</body>
+</html>
